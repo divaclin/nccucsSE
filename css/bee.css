@@ -25,7 +25,7 @@ header ul li a:hover{
 	text-decoration:none;
 	color:#FFCC22;
 }
-header ul li a:active{
+header ul li a:visited{
 	text-decoration:none;
 	color:#FFCC22;
 }
