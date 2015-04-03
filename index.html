@@ -9,18 +9,22 @@
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
           <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		  <script src="scrollit.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<header>
 			<ul>
-				<li><a href="#">first</a></li>
-				<li><a href="#">second</a></li>
-				<li><a href="#">third</a></li>
-				<li><a href="#">fourth</a></li>				
+				<li><a data-scroll-nav="0" href="#">first</a></li>
+				<li><a data-scroll-nav="1" href="#">second</a></li>
+				<li><a data-scroll-nav="2" href="#">third</a></li>
+				<li><a data-scroll-nav="3" href="#">fourth</a></li>				
 			</ul>
 		</header>
 		<article>
-			   
+			<div data-scroll-index="0">something1</div>
+			<div data-scroll-index="1">something2</div>
+			<div data-scroll-index="2">something3</div>
+			<div data-scroll-index="4">something4</div>
 		</article>
 		<footer>
 			
