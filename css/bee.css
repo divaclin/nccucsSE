@@ -25,6 +25,10 @@ header ul li a:hover{
 	text-decoration:none;
 	color:#FFCC22;
 }
+header ul li a:active{
+	text-decoration:none;
+	color:#FFCC22;
+}
 footer{
 	width:100%;
 	height:50px;
