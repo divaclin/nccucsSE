@@ -29,6 +29,11 @@ header ul li a:visited{
 	text-decoration:none;
 	color:#FFCC22;
 }
+.articlePlane{
+	width:100vw;
+	height:100vh;
+}
+
 footer{
 	width:100%;
 	height:50px;
