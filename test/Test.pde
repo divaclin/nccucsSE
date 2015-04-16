@@ -1,3 +1,4 @@
+//
 final int GAME_START = 1;
 final int GAME_RUN   = 2;
 final int GAME_PAUSE = 3;
