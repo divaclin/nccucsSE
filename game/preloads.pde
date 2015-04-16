@@ -1,0 +1,11 @@
+/* @pjs pauseOnBlur="true"; 
+        preload="data/body1.png,
+                 data/body2.png,
+                 data/body3.png,
+                 data/body4.png,
+                 data/head1.png,
+                 data/head2.png,
+                 data/head3.png,
+                 data/head4.png,
+                 data/tail.png"; */
+
