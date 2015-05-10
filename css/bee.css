@@ -18,6 +18,8 @@ header ul li{
 	display:inline-block;
 	margin:7px 17.5px 0 17.5px;
 	font-size:14px;	
+	border-right:5px #000 solid;
+	padding-right:40px;
 }
 
 header ul li a{
