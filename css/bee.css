@@ -33,10 +33,21 @@ header ul li a:visited{
 	color:#FFCC22;
 }
 article{
+   margin:0 auto;
    margin-top:50px;
    width:960px;
    height:100vh;
    background:#73C69A;	
+}
+iframe{
+	overflow:hidden;
+}
+.logoImg{
+	background-image:url('../img/logoImg.png');
+	background-repeat:no-repeat; 
+	background-size:555px 135px;
+	width:555px;
+	height:135px; 
 }
 footer{
 	width:100%;
