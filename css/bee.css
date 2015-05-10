@@ -5,7 +5,7 @@ body{
 header{
 	width:960px;
 	height:200px;
-	background:#000;
+	background:#73C69A;
 	margin:0 auto;
 }
 header ul{
@@ -33,7 +33,6 @@ header ul li a:visited{
 }
 article{
    margin:0 auto;
-   margin-top:50px;
    width:960px;
    height:100vh;
    background:#73C69A;	
