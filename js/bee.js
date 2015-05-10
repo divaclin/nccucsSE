@@ -7,18 +7,18 @@ $(window).on('hashchange', function() {
 
 function router(){
 	var tag=window.location.href.match(/#[a-zA-Z]*/g);
-	console.log(tag);
-    switch(tag){
-	  case "#about":
+	console.log(tag.substr(1));
+    switch(tag.substr(1);){
+	  case "about":
 		  $('article').html('<div style="font-size:30px;">this is about</div>');
 		  break;
-	  case "#info":
+	  case "info":
 		  $('article').html('<div style="font-size:30px;">this is info</div>');
 		  break;
-	  case "#link":
+	  case "link":
 		  $('article').html('<div style="font-size:30px;">this is link</div>');
 		  break;
-	  case "#QA":
+	  case "QA":
 		  $('article').html('<div style="font-size:30px;">this is QA</div>');
 		  break;
 	  default:
