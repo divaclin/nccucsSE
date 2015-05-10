@@ -23,9 +23,9 @@ function router(tag){
 		  $('article').html('<div style="font-size:30px;">this is QA</div>');
 		  break;
 	  default:
-		  $('article').html('<iframe src="FlappyBee/play.html" width="640" height="480"></iframe>');
+		  $('article').html('<iframe src="FlappyBee/play.html" width="650" height="490"></iframe>');
 	  	  $('iframe').css("margin-top","0px");
-	  	  $('iframe').css("margin-left","160px");
+	  	  $('iframe').css("margin-left","155px");
 	  	  $('body').css("overflow","hidden");
 		  break;	 	  
     	
