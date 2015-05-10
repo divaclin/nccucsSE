@@ -5,8 +5,8 @@ $(window).on('hashchange', function() {
 	router();
 });
 
-function router(){
-	var tag='';
+function router(tag){
+	tag=''|tag;
 	tag+=window.location.href.match(/#[a-zA-Z]*/g);
 	console.log(typeof(tag));
     switch(tag){
