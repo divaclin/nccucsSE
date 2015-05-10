@@ -5,9 +5,12 @@ $(window).on('hashchange', function() {
 	router();
 });
 
-function router(tag){
-	tag=''|tag;
+function router(tagStr){
+	tag='';
 	tag+=window.location.href.match(/#[a-zA-Z]*/g);
+	if(tagStr){
+		tag=tagStr;
+	}
 	console.log(tag);
     switch(tag){
 	  case "#about":
