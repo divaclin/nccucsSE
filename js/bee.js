@@ -24,8 +24,9 @@ function router(tag){
 		  break;
 	  default:
 		  $('article').html('<iframe src="FlappyBee/play.html" width="640" height="480"></iframe>');
-	  	  $('iframe').css("margin-top",($(window).height()-530)/2+10);
+	  	  $('iframe').css("margin-top","0px");
 	  	  $('iframe').css("margin-left","160px");
+	  	  $('body').css("overflow","hidden");
 		  break;	 	  
     	
     }
