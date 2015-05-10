@@ -21,18 +21,18 @@ header ul li{
 
 header ul li a{
 	text-decoration:none;
-	background-image-size:150px 35px;
+	background-size:150px 35px;
 	width:150px;
 	height:35px;
-	color:#fff;
+	color:transparent;
 }
 header ul li a:hover{
 	text-decoration:none;
-	color:#FFCC22;
+	color:transparent;
 }
 header ul li a:visited{
 	text-decoration:none;
-	color:#FFCC22;
+	color:transparent;
 }
 article{
    margin:0 auto;
