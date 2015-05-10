@@ -1,7 +1,4 @@
-body{
-	background:#73C69A;
-	overflow:hidden;
-}
+
 header{
 	width:960px;
 	height:200px;
@@ -58,4 +55,8 @@ footer{
 	width:100%;
 	height:50px;
 	background:#FFCC22;
+}
+body{
+	background:#73C69A;
+	overflow:hidden;
 }
