@@ -33,8 +33,10 @@ header ul li a:visited{
 	color:#FFCC22;
 }
 article{
+   margin-top:50px;
    width:960px;
-   height:100vh;	
+   height:100vh;
+   background:#73C69A;	
 }
 footer{
 	width:100%;
