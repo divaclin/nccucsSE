@@ -1,5 +1,6 @@
 body{
 	background:#73C69A;
+	overflow:hidden;
 }
 header{
 	width:100%;
@@ -45,9 +46,9 @@ iframe,canvas{
 .logoImg{
 	background-image:url('../img/logo.png');
 	background-repeat:no-repeat; 
-	background-size:555px 135px;
-	width:555px;
-	height:135px; 
+	background-size:370px 90px;
+	width:370px;
+	height:90px; 
 }
 footer{
 	width:100%;
