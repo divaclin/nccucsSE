@@ -39,7 +39,7 @@ article{
    height:100vh;
    background:#73C69A;	
 }
-iframe{
+iframe,canvas{
 	overflow:hidden;
 }
 .logoImg{
