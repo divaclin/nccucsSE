@@ -14,14 +14,14 @@ header ul{
 }
 header ul li{
 	display:inline-block;
-	margin:15px 1%;
+	margin:15px 5px 0 0;
 	font-size:14px;
-	color:#fff;
+	background-color:#BA7D43;
+	
 }
 
 header ul li a{
 	text-decoration:none;
-	background-color:#BA7D43;
 	background-size:150px 35px;
 	width:150px;
 	height:35px;
