@@ -25,6 +25,7 @@ header ul li a{
 	width:150px;
 	height:35px;
 	color:transparent;
+	display: block;
 }
 header ul li a:hover{
 	text-decoration:none;
