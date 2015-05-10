@@ -56,7 +56,9 @@ iframe,canvas{
 	background-repeat:no-repeat; 
 	background-size:422px 43px;
 	width:422px;
-	height:43px; 
+	height:43px;
+	margin:45px 0 0 20px;
+	display:inline-block; 
 }
 .beeContainer{
 	background:#fff;
