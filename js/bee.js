@@ -7,8 +7,7 @@ $(window).on('hashchange', function() {
 
 function router(){
 	var tag=window.location.href.match(/#[a-zA-Z]*/g);
-	tag=tag.substr(1);
-	console.log(tag);
+	console.log(typeof(tag));
     switch(tag){
 	  case "about":
 		  $('article').html('<div style="font-size:30px;">this is about</div>');
