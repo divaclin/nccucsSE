@@ -9,14 +9,14 @@ header{
 	margin:0 auto;
 }
 header ul{
-	width:600px;
+	width:715px;
     height:50px;
 	margin:25px auto;
 	background-color:#BA7D43;	
 }
 header ul li{
 	display:inline-block;
-	margin:7px 5px 0 0;
+	margin:7px 17.5px 0 17.5px;
 	font-size:14px;	
 }
 
