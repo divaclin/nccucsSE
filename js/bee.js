@@ -1,7 +1,5 @@
 $(document).ready(function(){
 	router();
-	$('iframe').css("margin-top",($(window).height()-530)/2);
-	$('iframe').css("margin-left","160px");
 });
 $(window).on('hashchange', function() {
 	router();
@@ -11,20 +9,22 @@ function router(){
 	var tag=window.location.href.match(/#[a-zA-Z]*/g);
 	console.log(tag);
     switch(tag){
-	  case '#about':
+	  case "#about":
 		  $('article').html('<div style="font-size:30px;">this is about</div>');
 		  break;
-	  case '#info':
+	  case "#info":
 		  $('article').html('<div style="font-size:30px;">this is info</div>');
 		  break;
-	  case '#link':
+	  case "#link":
 		  $('article').html('<div style="font-size:30px;">this is link</div>');
 		  break;
-	  case '#QA':
+	  case "#QA":
 		  $('article').html('<div style="font-size:30px;">this is QA</div>');
 		  break;
 	  default:
 		  $('article').html('<iframe src="FlappyBee/play.html" width="640" height="480"></iframe>');
+	  	  $('iframe').css("margin-top",($(window).height()-530)/2);
+	  	  $('iframe').css("margin-left","160px");
 		  break;	 	  
     	
     }
