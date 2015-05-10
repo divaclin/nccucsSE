@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	router();
-	$('iframe').css("margin-top",($(window).height()-530)/2+50);
+	$('iframe').css("margin-top",($(window).height()-530)/2);
 	$('iframe').css("margin-left","160px");
 });
 $(window).on('hashchange', function() {
