@@ -14,7 +14,7 @@ function router(tagStr){
 	console.log(tag);
     switch(tag){
 	  case "#about":
-		  $('article').html('<div style="background:#000; width:700px; height:80%; border-radius:5px;">this is about</div>');
+		  $('article').html('<div class="container">this is about</div>');
 		  break;
 	  case "#info":
 		  $('article').html('<div><div class="newInfo"><div class="newInfoUnderline"></div></div></div>');
