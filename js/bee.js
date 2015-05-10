@@ -23,8 +23,7 @@ function router(){
 		  $('article').html('<div style="font-size:30px;">this is QA</div>');
 		  break;
 	  default:
-		  $('article').html('<iframe src="FlappyBee/play.html" width="640" height="480"></iframe>
-');
+		  $('article').html('<iframe src="FlappyBee/play.html" width="640" height="480"></iframe>');
 		  break;	 	  
     	
     }
