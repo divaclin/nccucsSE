@@ -11,19 +11,20 @@ function router(){
 	var tag=window.location.href.match(/#[a-zA-Z]*/g);
     switch(tag){
 	  case '#about':
-		  $('article').html();
+		  $('article').html('<div style="font-size:30px;">this is about</div>');
 		  break;
 	  case '#info':
-		  $('article').html();
+		  $('article').html('<div style="font-size:30px;">this is info</div>');
 		  break;
 	  case '#link':
-		  $('article').html();
+		  $('article').html('<div style="font-size:30px;">this is link</div>');
 		  break;
 	  case '#QA':
-		  $('article').html();
+		  $('article').html('<div style="font-size:30px;">this is QA</div>');
 		  break;
 	  default:
-		  $('article').html();
+		  $('article').html('<iframe src="FlappyBee/play.html" width="640" height="480"></iframe>
+');
 		  break;	 	  
     	
     }
