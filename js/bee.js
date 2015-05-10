@@ -4,5 +4,5 @@ $(document).ready(function(){
 });
 $(window).on('hashchange', function() {
 	var tag=window.location.href;
-	console.log(tag);
+	console.log(tag.str.match(/#/g));
 });
