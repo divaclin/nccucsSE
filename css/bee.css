@@ -52,11 +52,15 @@ iframe,canvas{
 	height:90px; 
 }
 .newInfo{
-	
+	background-image:url('../img/logo.png');
+	background-repeat:no-repeat; 
+	background-size:422px 43px;
+	width:422px;
+	height:43px; 
 }
 .beeContainer{
 	background:#fff;
-	width:700px; 
+	width:890px; 
 	height:70%; 
 	border-radius:50px;
 	margin:0 auto;

@@ -14,16 +14,16 @@ function router(tagStr){
 	console.log(tag);
     switch(tag){
 	  case "#about":
-		  $('article').html('<div class="beeContainer">this is about</div>');
+		  $('article').html('<div class="beeContainer"><p>about</p></div>');
 		  break;
 	  case "#info":
-		  $('article').html('<div><div class="newInfo"><div class="newInfoUnderline"></div></div></div>');
+		  $('article').html('<div class="beeContainer"><div class="newInfo"></div></div>');
 		  break;
 	  case "#link":
-		  $('article').html('<div style="font-size:30px;">this is link</div>');
+		  $('article').html('<div class="beeContainer"><p><link/p></div>');
 		  break;
 	  case "#QA":
-		  $('article').html('<div style="font-size:30px;">this is QA</div>');
+		  $('article').html('<div class="beeContainer"><p>QA</p></div>');
 		  break;
 	  default:
 		  $('article').html('<iframe src="FlappyBee/play.html"  width="650" height="490"></iframe>');
