@@ -10,14 +10,13 @@ header{
 }
 header ul{
     height:50px;
-	margin:0;	
+	margin:0;
+	background-color:#BA7D43;	
 }
 header ul li{
 	display:inline-block;
 	margin:15px 5px 0 0;
-	font-size:14px;
-	background-color:#BA7D43;
-	
+	font-size:14px;	
 }
 
 header ul li a{
