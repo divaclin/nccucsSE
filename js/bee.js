@@ -6,19 +6,20 @@ $(window).on('hashchange', function() {
 });
 
 function router(){
-	var tag=window.location.href.match(/#[a-zA-Z]*/g);
-	console.log(typeof(JSON.stringfy(tag)));
+	var tag='';
+	tag+=window.location.href.match(/#[a-zA-Z]*/g);
+	console.log(typeof(tag));
     switch(tag){
-	  case "about":
+	  case "#about":
 		  $('article').html('<div style="font-size:30px;">this is about</div>');
 		  break;
-	  case "info":
+	  case "#info":
 		  $('article').html('<div style="font-size:30px;">this is info</div>');
 		  break;
-	  case "link":
+	  case "#link":
 		  $('article').html('<div style="font-size:30px;">this is link</div>');
 		  break;
-	  case "QA":
+	  case "#QA":
 		  $('article').html('<div style="font-size:30px;">this is QA</div>');
 		  break;
 	  default:
