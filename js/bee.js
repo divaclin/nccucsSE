@@ -20,7 +20,7 @@ function router(tagStr){
 		  $('article').html('<div class="beeContainer"><div class="newInfo"></div></div>');
 		  break;
 	  case "#link":
-		  $('article').html('<div class="beeContainer"><p><link/p></div>');
+		  $('article').html('<div class="beeContainer"></div>');
 		  break;
 	  case "#QA":
 		  $('article').html('<div class="beeContainer"><p>QA</p></div>');
