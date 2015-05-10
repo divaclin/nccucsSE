@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	router();
+	//router();
 });
 $(window).on('hashchange', function() {
 	router();
