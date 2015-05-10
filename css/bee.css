@@ -21,6 +21,9 @@ header ul li{
 
 header ul li a{
 	text-decoration:none;
+	background-image-size:150px 35px;
+	width:150px;
+	height:35px;
 	color:#fff;
 }
 header ul li a:hover{
