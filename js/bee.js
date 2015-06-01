@@ -5,6 +5,15 @@ $(window).on('hashchange', function() {
 	router();
 });
 
+(function(){
+	var Router;
+	
+	Router = function(){
+		
+	}
+		
+})();
+
 function router(tagStr){
 	tag='';
 	tag+=window.location.href.match(/#[a-zA-Z]*/g);
