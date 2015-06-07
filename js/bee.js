@@ -5,9 +5,8 @@ $(window).on('hashchange', function() {
 	router();
 });
 $(document).on('mouseover','#secondUl',function(e){
-	var sleft = 510/1440;
-	var fix = (1440-$(window).width())/3;
-	$('#secondLi').css({"left":sleft*$(window).width()-fix});
+	var fix = (1440-$(window).width())/2;
+	$('#secondLi').css({"left":fix+260});
 	$('#secondLi').show();
 	console.log($(window).width());
 });
