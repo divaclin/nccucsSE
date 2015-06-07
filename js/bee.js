@@ -6,9 +6,9 @@ $(window).on('hashchange', function() {
 });
 $(document).on('mouseover','#secondUl',function(e){
 	var sleft = 510/1440;
-	$('#secondLi').css({"left":sleft*window.screen.width});
+	$('#secondLi').css({"left":sleft*$(window).width()});
 	$('#secondLi').show();
-	console.log(window.screen.width);
+	console.log($(window).width());
 });
 $(document).on('mouseout','#secondUl',function(e){
 	$('#secondLi').hide();
