@@ -16,4 +16,7 @@
 }
 #secondLi{
 	display:none;
+	height:80px;
+	width:146px;
+	background:rgb(186,125,67);
 }
