@@ -4,6 +4,12 @@ $(document).ready(function(){
 $(window).on('hashchange', function() {
 	router();
 });
+$(document).on('onmouseover','#secondUl',function(e){
+	$('#secondLi').show();
+});
+$(document).on('onmouseout','#secondUl',function(e){
+	$('#secondLi').hide();
+});
 
 (function(){
 	var Router;
