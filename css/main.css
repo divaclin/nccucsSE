@@ -10,9 +10,9 @@
 	    white 0px -2px, white -1.4px -1.4px, white 1.4px 1.4px, 
 	    white 1.4px -1.4px, white -1.4px 1.4px; 
 }
-.secondLi li{
+#secondLi li{
 	display:block;
 }
-.secondLi{
+#secondLi{
 	display:none;
 }
