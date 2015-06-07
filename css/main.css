@@ -14,10 +14,13 @@
 	display:block;
 	border-right:0;
 }
+#secondLi li a{
+	margin-left:-10px;
+}
 #secondLi{
 	display:none;
-	height:80px;
-	width:146px;
+	height:100px;
+	width:160px;
 	background:rgb(186,125,67);
 	position:absolute;
 	left:510px;
