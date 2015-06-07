@@ -12,6 +12,7 @@
 }
 #secondLi li{
 	display:block;
+	border-right:0;
 }
 #secondLi{
 	display:none;
