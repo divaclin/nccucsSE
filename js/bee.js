@@ -5,7 +5,7 @@ $(window).on('hashchange', function() {
 	router();
 });
 $(document).on('mouseover','#secondUl',function(e){
-	var sleft = 510/1440:
+	var sleft = 510/1440;
 	$('#secondLi').css({"left":sleft*window.screen.width});
 	$('#secondLi').show();
 	console.log(window.screen.width);
