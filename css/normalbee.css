@@ -5,13 +5,13 @@ header{
 	background:#73C69A;
 	margin:0 auto;
 }
-header ul{
+header > ul{
 	width:820px;
     height:50px;
 	margin:25px auto;
 	background-color:#BA7D43;	
 }
-header ul li{
+header > ul li{
 	display:inline-block;
 	margin:7px 17.5px 0 17.5px;
 	font-size:14px;	
@@ -27,7 +27,7 @@ header ul li a{
 	color:transparent;
 	display: block;
 }
-header ul li a:hover{
+header  ul li a:hover{
 	text-decoration:none;
 	color:transparent;
 }

@@ -5,13 +5,13 @@ header{
 	background:#73C69A;
 	margin:0 auto;
 }
-header ul{
+header > ul{
 	width:640px;
     height:50px;
 	margin:15px auto 0 auto;
 	background-color:#BA7D43;	 
 }
-header ul li{
+header > ul li{
 	display:inline-block;
 	margin:7px 10px 0 22px;
 	font-size:14px;	
