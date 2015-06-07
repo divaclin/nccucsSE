@@ -4,10 +4,10 @@ $(document).ready(function(){
 $(window).on('hashchange', function() {
 	router();
 });
-$(document).on('onmouseover','#secondUl',function(e){
+$(document).on('mouseover','#secondUl',function(e){
 	$('#secondLi').show();
 });
-$(document).on('onmouseout','#secondUl',function(e){
+$(document).on('mouseout','#secondUl',function(e){
 	$('#secondLi').hide();
 });
 
