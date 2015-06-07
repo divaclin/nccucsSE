@@ -6,7 +6,8 @@ $(window).on('hashchange', function() {
 });
 $(document).on('mouseover','#secondUl',function(e){
 	var sleft = 510/1440;
-	$('#secondLi').css({"left":sleft*$(window).width()});
+	var fix = (1440-$(window).width())/3;
+	$('#secondLi').css({"left":sleft*$(window).width()-fix});
 	$('#secondLi').show();
 	console.log($(window).width());
 });
