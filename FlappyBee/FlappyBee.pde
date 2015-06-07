@@ -20,12 +20,7 @@ void setup(){
 void draw(){
      switch(gameStat){
       case GAME_START:
-         background(0);
-         fill(255,191,0);
-         textSize(30);
-         textAlign(LEFT);         
-         text("Flappy Bee",240,180);
-         text("Press any button to Play",150,280);
+         image(img.start,0,0,640,480);
          break;
       case GAME_RUN:
          background(93,148,251);
@@ -47,13 +42,10 @@ void draw(){
          score+=3;
          break;
       case GAME_LOSE:
-          background(0);
-          fill(255,191,0);
+          image(img.end,0,0,640,480);
+          fill(255,231,0);
           textSize(30);
-          textAlign(CENTER);         
-          text("GAME OVER",320,180);
-          text("score",250,280);
-          text(score,420,280);
+          text(score,420,300);
          break;
       default:
          break;
