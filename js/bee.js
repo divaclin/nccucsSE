@@ -43,6 +43,10 @@ function router(tagStr){
 	  case "#QA":
 		  $('article').html('<div class="beeContainer"><p>QA</p></div>');
 		  break;
+	  case "#legalInfo":
+		  break;
+	  case "beeInfo":
+		  break;	  	  
 	  default:
 		  $('article').html('<iframe src="FlappyBee/play.html"  width="650" height="490"></iframe>');
 	  	  $('iframe').css("margin-top","0px");
