@@ -1,4 +1,4 @@
-$(document).ready(function(){
+(function(){
 	Router = (function(){
 		var $router;
 		$router = void 0;
@@ -7,7 +7,7 @@ $(document).ready(function(){
 		}
 		
 		Router.prototype.page = function(){
-			var tag = window.location.href.match(/#[a-zA-Z]*/g) || '';
+			var tag = window.location.href.match(/#[a-zA-Z]*/g);
 			var text = '';
 		    switch(tag){
 	  	      case "#about":
@@ -37,6 +37,10 @@ $(document).ready(function(){
 		return Router;
 	})();
 	window.router = new Router();
+		
+})();
+$(document).ready(function(){
+	
     router.page();
 });
 $(window).on('hashchange', function() {
@@ -51,47 +55,6 @@ $(document).on('mouseout','#secondUl',function(e){
 	$('#secondLi').hide();
 });
 
-// (function(){
-// 	Router = (function(){
-// 		var $router;
-// 		$router = void 0;
-// 		function Router(){
-// 			$router=$('article');
-// 		}
-//
-// 		Router.prototype.page = function(){
-// 			var tag = window.location.href.match(/#[a-zA-Z]*/g) || '';
-// 			var text = '';
-// 		    switch(tag){
-// 	  	      case "#about":
-// 				   text='<div class="beeContainer"><p>about</p></div>';
-// 	  		       break;
-// 	  	      case "#info":
-// 	  		       text='<div class="beeContainer"><div class="newInfo"></div></div>';
-// 	  		       break;
-// 	  	      case "#link":
-// 	  		       text='<div class="beeContainer"></div>';
-// 	  		       break;
-// 	  	  	  case "#QA":
-// 	  		 	   text='<div class="beeContainer"><p>QA</p></div>';
-// 	  		 	   break;
-// 	  	  	  case "#legalInfo":
-// 	  		 	   break;
-// 	  	  	  case "beeInfo":
-// 	  		       break;
-// 	  	  	  default:
-// 	  			   text='<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>';
-// 	  	  	  	   $('body').css("overflow","hidden");
-// 	  		       break;
-// 			}
-// 			$router.fadeOut('slow').html(text).fadeIn('slow');
-// 			return true;
-// 		};
-// 		return Router;
-// 	})();
-// 	window.router = new Router();
-//
-// })();
 
 function router(tagStr){
 	tag='';
