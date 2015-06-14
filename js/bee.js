@@ -7,9 +7,10 @@
 		}
 				
 		Router.prototype.page = function(){
-			var tag = window.location.href.match(/#[a-zA-Z]*/g);
+			var tag = window.location.href.match(/#[a-zA-Z]*/g)[0].substr(1);
+			
 			console.log(typeof(tag));
-			console.log(tag[0]);
+			console.log(tag);
 			var text = '';
 			var switchView = {
 				about:'<div class="beeContainer"><p>about</p></div>',
@@ -19,8 +20,8 @@
 				legalInfo:'',
 				beeInfo:'',
 			};
-			console.log(switchView[tag[0]]);
-			text = (switchView[tag[0]]==undefined?'<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>':switchView[tag]);
+			console.log(switchView[tag]);
+			text = (switchView[tag]==undefined?'<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>':switchView[tag]);
 			// 		    switch(tag){
 			// 	  	      case "#about":
 			// 	   text='<div class="beeContainer"><p>about</p></div>';
