@@ -26,11 +26,14 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 				    var all = new Parse.Query(CommonQuestion);
 					all.find({
 						success:function(data){
-							var t = setTimeout(function(){
-								  for(var i=0;i<data.length;i++){
-									  $(".QA").append('<h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><p>'+data[i].get('Answer')+'</p>');
-								   }
-								 },50);
+							// var t = setTimeout(function(){
+							// 	  for(var i=0;i<data.length;i++){
+							// 		  $(".QA").append('<h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><p>'+data[i].get('Answer')+'</p>');
+							// 	   }
+							// 	 },50);
+						  for(var i=0;i<data.length;i++){
+							  $(".QA").append('<h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><p>'+data[i].get('Answer')+'</p>');
+						   }
 						},
 						error: function(error) {
                                 console.log(error) ;
