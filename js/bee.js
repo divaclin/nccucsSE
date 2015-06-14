@@ -24,21 +24,21 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 				QA:function(){
 				    var CommonQuestion = Parse.Object.extend("CommonQuestion");
 				    var all = new Parse.Query(CommonQuestion);
-					var tmp = '';
 					all.find({
 						success:function(data){
+							var tmp = '';
 							for(var i=0;i<data.length;i++){
 								console.log(data[i].get('Question'));
 								tmp+='<h5>'+data[i].get('Question')+'</h5><p>'+data[i].get('Answer')+'</p>';
 							}
-							return '<div class="beeContainer"><div class="QA">'+tmp+'</div></div>';
+							console.log(tmp);
 						},
 						error: function(error) {
                                 console.log(error) ;
                                 alert(error.message);
                         }
 					});
-					//return '<div class="beeContainer"><div class="QA">'+tmp+'</div></div>';
+					return '<div class="beeContainer"><div class="QA">'+tmp+'</div></div>';
 				   },
 				legalInfo:'',
 				beeInfo:'',
