@@ -34,7 +34,8 @@
 	  	  	  	   $('body').css("overflow","hidden");
 	  		       break;
 			}
-			$router.fadeOut('slow').html(text).fadeIn('slow');
+			console.log(text);
+			$router.html('').fadeOut('slow').html(text).fadeIn('slow');
 			return true;
 		};
 		return Router;
