@@ -24,22 +24,20 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 				QA:function(){
 				    var CommonQuestion = Parse.Object.extend("CommonQuestion");
 				    var all = new Parse.Query(CommonQuestion);
-					var tmp;
-					var tmpText='';
 					all.find({
 						success:function(data){
-							localStorage.setItem("QA",JSON.stringify(data));
+							var t = setTimeout(function(){
+								  for(var i=0;i<data.length;i++){
+									  $(".QA").append('<h5>'+data[i].get('Question')+'</h5><p>'+data[i].get('Answer')+'</p>');
+								   }
+								 },2000);
 						},
 						error: function(error) {
                                 console.log(error) ;
                                 alert(error.message);
                         }
 					});
-					tmp = JSON.parse(localStorage.get("QA"));
-					for(var i=0;i<tmp.length;tmp++){
-						tmpText +='<h5>'+tmp[i].get('Question')+'</h5><p>'+tmp[i].get('Answer')+'</p>'; 
-					}
-					return '<div class="beeContainer"><div class="QA">'+tmpText+'</div></div>';
+					return '<div class="beeContainer"><div class="QA"></div></div>';
 				   },
 				legalInfo:'',
 				beeInfo:'',
