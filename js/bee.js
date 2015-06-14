@@ -21,29 +21,31 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 				link:function(){
 					  var RelatedLink = Parse.Object.extend("RelatedLink");
 					  var all; 					  
-					  for(var i=1;i<=3;i++){
+					  for(var j=1;j<=3;j++){
 					      all = new Parse.Query(RelatedLink); 
-					      all.equalTo("role",i);
+					      all.equalTo("role",j);
 					      all.find({
 						      success:function(data){
-								  switch(i){
-								     case 1:
+								  for(var i=0;i<data.length;i++){
+								   switch(j){
+								      case 1:
 										 $('.link').append('<h3>推廣網站</h3>');
 										 $('.link').appen('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
 										 $('.link').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');
 										 break;
-								     case 2:
+								      case 2:
 										 $('.link').append('<h3>知名業者</h3>');
 										 $('.link').appen('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
 										 $('.link').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');	 
 										 break;
-								     case 3:
+								      case 3:
 										 $('.link').append('<h3>新聞報導</h3>');
-										 $('.link').appen('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
+										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
 										 break;
-								     default:
+								      default:
 										 break; 	
-								  }
+								   }
+							     }
 						      },
 						      error:function(error){
                                  console.log(error) ;
