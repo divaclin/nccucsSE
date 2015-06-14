@@ -55,7 +55,7 @@ $(document).on('mouseover','#secondUl',function(e){
 	var fix = (1440-$(window).width())/2;
 	secondLi.width($('.listWord li').width());
 
-	$('#secondLi').css({"left":550-fix});
+	$('#secondLi').css({"left":530-fix});
 	$('#secondLi').show();
 });
 $(document).on('mouseout','#secondUl',function(e){
