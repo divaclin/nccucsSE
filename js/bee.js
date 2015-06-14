@@ -8,6 +8,7 @@
 				
 		Router.prototype.page = function(){
 			var tag = window.location.href.match(/#[a-zA-Z]*/g);
+			console.log(typeof(tag));
 			tag = (tag==null?'':tag.substr(1));
 			console.log(tag);
 			var text = '';
