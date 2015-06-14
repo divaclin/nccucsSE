@@ -3,7 +3,7 @@
 		var $router;
 		$router = void 0;
 		function Router(){
-			$router=$('article');
+			$router=$('#switchView');
 		}
 				
 		Router.prototype.page = function(){
