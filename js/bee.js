@@ -55,7 +55,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 						      }
 					     });
 				      }
-				      },500);
+				      },1500);
 					  return '<div class="beeContainer"><div class="link"></div></div>';
 				     },
 				QA:function(){
