@@ -53,7 +53,7 @@ $(window).on('hashchange', function() {
 $(document).on('mouseover','#secondUl',function(e){
 	var secondLi = $('#secondLi');
 	var fix = (1440-$(window).width())/2;
-	secondLi.width($('.listWord li').width());
+	secondLi.width($('.listWord li').width()+3);
 
 	$('#secondLi').css({"left":540-fix});
 	$('#secondLi').show();
