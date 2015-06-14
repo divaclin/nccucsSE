@@ -11,30 +11,6 @@ header > ul{
 	margin:25px auto;
 	background-color:#BA7D43;	
 }
-header > ul li{
-	display:inline-block;
-	margin:7px 17.5px 0 17.5px;
-	font-size:14px;	
-	border-right:5px #000 solid;
-	padding-right:30px;
-}
-
-header ul li a{
-	text-decoration:none;
-	background-size:150px 35px;
-	width:150px;
-	height:35px;
-	color:transparent;
-	display: block;
-}
-header  ul li a:hover{
-	text-decoration:none;
-	color:transparent;
-}
-header ul li a:visited{
-	text-decoration:none;
-	color:transparent;
-}
 article{
    margin:0 auto;
    width:960px;
@@ -51,17 +27,6 @@ iframe,canvas{
 	width:370px;
 	height:90px; 
 }
-
-
-.newInfo{
-	background-image:url('../img/newInfo.png');
-	background-repeat:no-repeat; 
-	background-size:422px 43px;
-	width:422px;
-	height:43px;
-	margin:45px 0 0 20px;
-	display:inline-block; 
-}
 .beeContainer{
 	background:#fff;
 	width:890px; 
@@ -77,5 +42,4 @@ footer{
 body{
 	background:#73C69A;
 	overflow:hidden;
-}
 }
