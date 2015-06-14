@@ -28,7 +28,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 						success:function(data){
 							var t = setTimeout(function(){
 								  for(var i=0;i<data.length;i++){
-									  $(".QA").append('<h2>'+data[i].get('Question')+'</h2><p>'+data[i].get('Answer')+'</p>');
+									  $(".QA").append('<h2>Q'+i+'. '+data[i].get('Question')+'</h2><p>'+data[i].get('Answer')+'</p>');
 								   }
 								 },500);
 						},
