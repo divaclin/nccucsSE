@@ -20,7 +20,8 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 				     },
 				link:function(){
 					  var RelatedLink = Parse.Object.extend("RelatedLink");
-					  var all; 					  
+					  var all;
+					  var t = setTimeout(function(){ 					  
 					  for(var j=1;j<=3;j++){
 					      all = new Parse.Query(RelatedLink); 
 					      all.equalTo("role",j);
@@ -54,6 +55,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 						      }
 					     });
 				      }
+				      },500);
 					  return '<div class="beeContainer"><div class="link"></div></div>';
 				     },
 				QA:function(){
