@@ -10,8 +10,10 @@
 	text-shadow: white 0px 2px, white 2px 0px, white -2px 0px, 
 	    white 0px -2px, white -1.4px -1.4px, white 1.4px 1.4px, 
 	    white 1.4px -1.4px, white -1.4px 1.4px; 
+	
 }
 .listWord a{
+	font-size:25px;
 	color:black;
     text-decoration:none;
 }
