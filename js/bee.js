@@ -27,8 +27,8 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					var tmp = '';
 					all.find({
 						success:function(data){
-							console.log(data[i].get('Question'));
 							for(var i=0;i<data.length;i++){
+								console.log(data[i].get('Question'));
 								tmp+='<h5>'+data[i].get('Question')+'</h5><p>'+data[i].get('Answer')+'</p>';
 							}
 						},
