@@ -30,7 +30,7 @@ iframe,canvas{
 .beeContainer{
 	background:#fff;
 	width:860px; 
-	height:70%; 
+	height:70vh; 
 	border-radius:50px;
 	margin:0 auto;
 }
