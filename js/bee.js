@@ -7,7 +7,7 @@
 		}
 				
 		Router.prototype.page = function(){
-			var tag = (tag==null?null:window.location.href.match(/#[a-zA-Z]*/g)[0].substr(1));
+			var tag = (window.location.href.match(/#[a-zA-Z]*/g)==null?null:window.location.href.match(/#[a-zA-Z]*/g)[0].substr(1));
 			var text = '';
 			var switchView = {
 				about:'<div class="beeContainer"><p>about</p></div>',
