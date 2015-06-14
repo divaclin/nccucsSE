@@ -51,7 +51,9 @@ $(window).on('hashchange', function() {
 	router.page();
 });
 $(document).on('mouseover','#secondUl',function(e){
+	var secondLi = $('#secondLi');
 	var fix = (1440-$(window).width())/2;
+	console.log($('.listWord li:1st').width()):
 	$('#secondLi').css({"left":460-fix});
 	$('#secondLi').show();
 });
