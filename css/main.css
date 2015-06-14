@@ -10,6 +10,13 @@
 	    white 0px -2px, white -1.4px -1.4px, white 1.4px 1.4px, 
 	    white 1.4px -1.4px, white -1.4px 1.4px; 
 }
+.listWord a{
+	color:black;
+    text-decoration:none;
+}
+.listWord a:hover;{
+	color:black;
+}
 #secondLi li{
 	display:block;
 	border-right:0;
