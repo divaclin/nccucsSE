@@ -36,11 +36,10 @@
 		};
 		return Router;
 	})();
-	window.router = new Router();
-		
-})();
+	window.router = new Router();		
+}).call(this);
+
 $(document).ready(function(){
-	
     router.page();
 });
 $(window).on('hashchange', function() {
