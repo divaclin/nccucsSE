@@ -25,7 +25,9 @@
 	  	  	  case "#legalInfo":
 	  		 	   break;
 	  	  	  case "beeInfo":
-	  		       break;	  	  
+	  		       break;
+			  case "#":
+				   break; 	   	  	  
 	  	  	  default:
 	  			   text='<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>';
 	  	  	  	   $('body').css("overflow","hidden");
