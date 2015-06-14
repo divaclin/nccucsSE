@@ -30,12 +30,12 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 								   switch(j){
 								      case 1:
 										 $('.link').append('<h3>推廣網站</h3>');
-										 $('.link').appen('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
+										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
 										 $('.link').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');
 										 break;
 								      case 2:
 										 $('.link').append('<h3>知名業者</h3>');
-										 $('.link').appen('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
+										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
 										 $('.link').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');	 
 										 break;
 								      case 3:
