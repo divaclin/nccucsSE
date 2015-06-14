@@ -24,7 +24,7 @@
 	color:black;
     text-decoration:none;
 }
-.listWord a:hover,.listWord a:visited{
+.listWord a:hover,.listWord a:visited,.listWord a:active{
 	color:black;
     text-decoration:none;
 }
