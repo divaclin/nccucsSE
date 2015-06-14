@@ -52,7 +52,7 @@ $(window).on('hashchange', function() {
 });
 $(document).on('mouseover','#secondUl',function(e){
 	var fix = (1440-$(window).width())/2;
-	$('#secondLi').css({"left":510-fix});
+	$('#secondLi').css({"left":460-fix});
 	$('#secondLi').show();
 });
 $(document).on('mouseout','#secondUl',function(e){
