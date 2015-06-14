@@ -30,7 +30,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 								  for(var i=0;i<data.length;i++){
 									  $(".QA").append('<h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><p>'+data[i].get('Answer')+'</p>');
 								   }
-								 },500);
+								 },50);
 						},
 						error: function(error) {
                                 console.log(error) ;
