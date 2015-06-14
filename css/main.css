@@ -5,6 +5,7 @@
 @import url(phonebee.css) screen and (max-width: 480px);
 
 .listWord{
+	font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei";
 	color: black; 
 	text-shadow: white 0px 2px, white 2px 0px, white -2px 0px, 
 	    white 0px -2px, white -1.4px -1.4px, white 1.4px 1.4px, 
