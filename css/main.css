@@ -29,6 +29,7 @@
     text-decoration:none;
 }
 #secondLi li{
+	width:100%;
 	display:block;
 	border-right:0;
 }
@@ -41,7 +42,6 @@
 	width:100%;
 	background:rgb(186,125,67);
 	position:absolute;
-	left:510px;
 	top:155px;
 	z-index:2;
 }
