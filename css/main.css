@@ -12,6 +12,10 @@
 	    white 1.4px -1.4px, white -1.4px 1.4px; 
     text-align:center;
 }
+.listWord li{
+	width:25%;
+	height:50px;
+}
 .listWord a{
 	font-size:25px;
 	color:black;
