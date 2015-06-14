@@ -26,6 +26,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					      all.equalTo("role",j);
 					      all.find({
 						      success:function(data){
+								  console.log(data);
 								  for(var i=0;i<data.length;i++){
 								   switch(j){
 								      case 1:
