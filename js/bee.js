@@ -74,8 +74,12 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					});
 					return '<div class="beeContainer"><div class="QA"></div></div>';
 				   },
-				legalInfo:'',
-				beeInfo:'',
+				legalInfo:function(){
+				             return '<div class="beeContainer"></div>';
+				          },
+				beeInfo:function(){
+	                         return '<div class="beeContainer"></div>';
+						}
 			};
 			text = (switchView[tag]==undefined?'<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>':switchView[tag]);
 			$router.fadeOut('slow',function(){			        
