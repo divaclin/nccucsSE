@@ -20,7 +20,7 @@
 				beeInfo:'',
 			};
 			console.log(switchView[tag]);
-			text = (switchView.[tag]==undefined?'<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>':switchView[tag]);
+			text = (switchView[tag]==undefined?'<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>':switchView[tag]);
 			// 		    switch(tag){
 			// 	  	      case "#about":
 			// 	   text='<div class="beeContainer"><p>about</p></div>';
