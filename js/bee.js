@@ -13,8 +13,8 @@
 			var switchView = {
 				about:'<div class="beeContainer"><div class="intro">'+intro+'</div></div>',
 				info:'<div class="beeContainer"><div class="newInfo"></div></div>',
-				linkL:'<div class="beeContainer"></div>',
-				QA:'<div class="beeContainer"><p>QA</p></div>',
+				link:'<div class="beeContainer"></div>',
+				QA:'<div class="beeContainer"><div class="QA"></div></div>',
 				legalInfo:'',
 				beeInfo:'',
 			};
