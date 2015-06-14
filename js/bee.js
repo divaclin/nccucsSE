@@ -19,7 +19,7 @@
 			};
 			text = (switchView[tag]==undefined?'<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>':switchView[tag]);
 			$router.fadeOut('slow',function(){			        
-					this.next().fadeIn('slow').html(text);	
+					$(this).next().fadeIn('slow').html(text);	
 			});
 			return true;
 		};
