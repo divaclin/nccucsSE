@@ -5,7 +5,7 @@
 		function Router(){
 			$router=$('article');
 		}
-		
+				
 		Router.prototype.page = function(){
 			var tag = window.location.href.match(/#[a-zA-Z]*/g);
 			var text = '';
@@ -36,7 +36,10 @@
 		};
 		return Router;
 	})();
-	window.router = new Router();		
+	
+    $(function() {
+		window.router = new Router();			
+	});
 }).call(this);
 
 $(document).ready(function(){
