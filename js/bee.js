@@ -18,7 +18,7 @@
 				beeInfo:'',
 			};
 			text = (switchView[tag]==undefined?'<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>':switchView[tag]);
-			$router.fadeOut('slow').html(text).fadeIn('slow');
+			$router.fadeOut('slow').delay(2000).html(text).fadeIn('slow');
 			return true;
 		};
 		return Router;
