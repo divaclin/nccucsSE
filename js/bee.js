@@ -31,13 +31,14 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 								console.log(data[i].get('Question'));
 								tmp+='<h5>'+data[i].get('Question')+'</h5><p>'+data[i].get('Answer')+'</p>';
 							}
+							return '<div class="beeContainer"><div class="QA">'+tmp+'</div></div>';
 						},
 						error: function(error) {
                                 console.log(error) ;
                                 alert(error.message);
                         }
 					});
-					return '<div class="beeContainer"><div class="QA">'+tmp+'</div></div>';
+					//return '<div class="beeContainer"><div class="QA">'+tmp+'</div></div>';
 				   },
 				legalInfo:'',
 				beeInfo:'',
