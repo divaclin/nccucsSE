@@ -28,9 +28,8 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					      all.find({
 						      success:function(data){
 								  for(var i=0;i<data.length;i++){
-								   console.log(typeof(j));
-								   console.log(parseInt(j)===1);   
-								   switch(parseInt(j)){
+ 								   console.log(j);   
+								   switch(j){
 								      case 1:
 										 $('.link').append('<h3>推廣網站</h3>');
 										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
