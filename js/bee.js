@@ -21,15 +21,13 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 				link:function(){
 					  var RelatedLink = Parse.Object.extend("RelatedLink");
 					  var all;
-					  var t = setTimeout(function(){ 					  
 					  for(var j=1;j<=3;j++){
 					      all = new Parse.Query(RelatedLink); 
 					      all.equalTo("role",j);
 					      all.find({
 						      success:function(data){
 								  for(var i=0;i<data.length;i++){
- 								   console.log(j);   
-								   switch(j){
+								   switch(data[i].get('role')){
 								      case 1:
 										 $('.link').append('<h3>推廣網站</h3>');
 										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
@@ -55,7 +53,6 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 						      }
 					     });
 				      }
-				      },3000);
 					  return '<div class="beeContainer"><div class="link"></div></div>';
 				     },
 				QA:function(){
