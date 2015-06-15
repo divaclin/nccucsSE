@@ -31,7 +31,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 								   console.log(typeof(data[i].get('role')));
 								   console.log(typeof(j));
 								   console.log($('.link'));	
-								   console.log(j==data[i].get('role'));   
+								   console.log(j==1);   
 								   switch(j){
 								      case 1:
 										 $('.link').append('<h3>推廣網站</h3>');
