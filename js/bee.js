@@ -28,21 +28,22 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					      all.find({
 						      success:function(data){
 								  for(var i=0;i<data.length;i++){
-								   console.log(data[i].get('name'));	   
+								   console.log(typeof(data[i].get('role')));
+								   console.log(typeof(j));	   
 								   switch(j){
 								      case 1:
-										 $('#temp').append('<h3>推廣網站</h3>');
-										 $('#temp').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
-										 $('#temp').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');
+										 $('.link').append('<h3>推廣網站</h3>');
+										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
+										 $('.link').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');
 										 break;
 								      case 2:
-										 $('#temp').append('<h3>知名業者</h3>');
-										 $('#temp').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
-										 $('#temp').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');	 
+										 $('.link').append('<h3>知名業者</h3>');
+										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
+										 $('.link').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');	 
 										 break;
 								      case 3:
-										 $('#temp').append('<h3>新聞報導</h3>');
-										 $('#temp').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
+										 $('.link').append('<h3>新聞報導</h3>');
+										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
 										 break;
 								      default:
 										 break; 	
@@ -56,7 +57,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					     });
 				      }
 				      },3000);
-					  return '<div class="beeContainer"><div class="link">'+$('#temp').html()+'</div></div>';
+					  return '<div class="beeContainer"><div class="link"></div></div>';
 				     },
 				QA:function(){
 				    var CommonQuestion = Parse.Object.extend("CommonQuestion");
