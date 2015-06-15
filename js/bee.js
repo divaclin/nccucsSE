@@ -29,7 +29,8 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 						      success:function(data){
 								  for(var i=0;i<data.length;i++){
 								   console.log(typeof(data[i].get('role')));
-								   console.log(typeof(j));	   
+								   console.log(typeof(j));
+								   console.log($('.link'));	   
 								   switch(j){
 								      case 1:
 										 $('.link').append('<h3>推廣網站</h3>');
