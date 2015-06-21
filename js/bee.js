@@ -113,4 +113,6 @@ $(document).on('mouseover','#secondUl',function(e){
 $(document).on('mouseout','#secondUl',function(e){
 	$('#secondLi').hide();
 });
-
+$(document).on('click','.dotCircle',function(e){
+    console.log($(this).attr('data-num'));
+});
