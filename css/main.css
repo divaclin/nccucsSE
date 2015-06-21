@@ -3,7 +3,9 @@
 @import url(mobilebee.css) screen and (max-width: 640px);
 
 @import url(phonebee.css) screen and (max-width: 480px);
-
+::-webkit-scrollbar { 
+    display: none; 
+}
 .listWord{
 	font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei";
 	color: black; 
@@ -61,11 +63,10 @@
 }
 .QAbox{
 	border:#FFB950 5px solid;
-	height:400px;
+	height:385px;
 	background:#FFFFC3;
 	border-radius:10px;
 	margin:0 auto;
-	margin-top:50px;
 	margin-bottom:150px;
 }
 .QAbox h3{
