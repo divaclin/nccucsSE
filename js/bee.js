@@ -132,7 +132,7 @@ $(function(){
     $('html').keydown(function(e){
 		var currentPage = router.currentPage();
 		var currentScroll = localStorage.getItem(currentPage);
-		var scrollUnit = localStorage.getItem(currentPage+"unit");
+		var scrollUnit = localStorage.getItem(currentPage+"-unit");
 		console.log(currentPage);
 		console.log(currentScroll);
 		console.log(scrollUnit);
