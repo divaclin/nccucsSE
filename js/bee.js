@@ -116,6 +116,9 @@ $(document).on('mouseout','#secondUl',function(e){
 $(document).on('click','.dotCircle',function(e){
     var target = $("a[data-num="+$(this).attr('data-num')+"]");
 	$('.QA').animate({scrollTop: target.offset().top},'slow');	
-	console.log(target);
-	console.log(target.offset().top);
+	//console.log(target);
+	//console.log(target.offset().top);
+	for(var i=0;i<10;i++){
+		console.log( $("a[data-num="+i+"]").offset().top);
+	}
 });
