@@ -133,14 +133,18 @@ $(function(){
 		var currentPage = router.currentPage();
 		var currentScroll = localStorage.getItem(currentPage);
 		var scrollUnit = localStorage.getItem(currentPage+"unit");
+		console.log(currentPage);
+		console.log(currentScroll);
+		console.log(scrollUnit);
+
 		switch(e.which){
 		case 37: //left	
 		case 38: //top
-	     	 $('.'+currentPage).animate({scrollTop: currentScroll+scrollUnit},'slow');
+	     	 $("."+currentPage).animate({scrollTop: currentScroll+scrollUnit},'slow');
 			break;
 		case 39: //right	
 		case 40: //down
-     	     $('.'+currentPage).animate({scrollTop: currentScroll-scrollUnit},'slow');
+     	     $("."+currentPage).animate({scrollTop: currentScroll-scrollUnit},'slow');
 			 break;
 		default:
 			break;
