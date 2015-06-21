@@ -121,6 +121,6 @@ $(document).on('click','.dotCircle',function(e){
 	console.log($(this).attr('data-num'));
 	console.log('yo');
 	for(var i=0;i<10;i++){
-		console.log( $("a[data-num="+i+"]").offset().top);
+		console.log( $("a[data-num="+i+"]").offset().top-243);
 	}
 });
