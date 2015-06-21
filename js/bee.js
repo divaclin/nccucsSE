@@ -114,7 +114,9 @@ $(document).on('mouseout','#secondUl',function(e){
 	$('#secondLi').hide();
 });
 $(document).on('click','.dotCircle',function(e){
-    // var target = $("a[data-num="+$(this).attr('data-num')+"]");
- // 	$('.QA').animate({scrollTop: target.offset().top},'slow');
-    $('.QA').animate({scrollTop: 535*parseInt($(this).attr('data-num'))},'slow');
+	 var start = $("a[data-num=0]").offset().top;
+     var target = $("a[data-num="+$(this).attr('data-num')+"]");
+  	$('.QA').animate({scrollTop: target.offset().top+start},'slow');
+	
+   // $('.QA').animate({scrollTop: 535*parseInt($(this).attr('data-num'))},'slow');
 });
