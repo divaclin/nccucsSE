@@ -118,6 +118,7 @@ $(document).on('click','.dotCircle',function(e){
 	$('.QA').animate({scrollTop: target.offset().top-243},'slow');	
 	//console.log(target);
 	//console.log(target.offset().top);
+	console.log($(this).attr('data-num'));
 	console.log('yo');
 	for(var i=0;i<10;i++){
 		console.log( $("a[data-num="+i+"]").offset().top);
