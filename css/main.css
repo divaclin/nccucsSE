@@ -78,3 +78,15 @@
 	color:#772B1A;
 	padding:15px;	
 }
+.dotSelector{
+	width:15px;
+	height:65vh;
+	position:absolute;
+}
+.dotCircle{
+	width:15px;
+	height:15px;
+	background:#772B1A;
+	display:inline-block;
+	border-radius:50%;
+}
