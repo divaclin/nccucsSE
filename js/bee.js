@@ -141,10 +141,12 @@ $(function(){
 		case 37: //left	
 		case 38: //top
 	     	 $("."+currentPage).animate({scrollTop: currentScroll-scrollUnit},'slow');
+			 localStorage.setItem(currentPage,currentScroll-scrollUnit);
 			break;
 		case 39: //right	
 		case 40: //down
      	     $("."+currentPage).animate({scrollTop: currentScroll+scrollUnit},'slow');
+			 localStorage.setItem(currentPage,currentScroll+scrollUnit);
 			 break;
 		default:
 			break;
