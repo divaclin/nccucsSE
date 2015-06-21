@@ -54,14 +54,14 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					     });
 				      }
 					  return '<div class="beeContainer"><div class="link"></div></div>';
-				     },
+				     } ,
 				QA:function(){
 				    var CommonQuestion = Parse.Object.extend("CommonQuestion");
 				    var all = new Parse.Query(CommonQuestion);
 					all.find({
 						success:function(data){
 						  for(var i=0;i<data.length;i++){
-							  $(".QA").append('<h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><p>'+data[i].get('Answer')+'</p>');
+							  $(".QA").append('<div class="QAbox"><h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><p>'+data[i].get('Answer')+'</p></div>');
 						   }
 						},
 						error: function(error) {
