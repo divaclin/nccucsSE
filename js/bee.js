@@ -114,5 +114,6 @@ $(document).on('mouseout','#secondUl',function(e){
 	$('#secondLi').hide();
 });
 $(document).on('click','.dotCircle',function(e){
-    console.log($(this).attr('data-num'));
+    var target = $(".QAbox[data-num="+$(this).attr('data-num')+"]");
+	$('.QA').animate({scrollTop: target.offset().top},'slow');	
 });
