@@ -140,11 +140,11 @@ $(function(){
 		switch(e.which){
 		case 37: //left	
 		case 38: //top
-	     	 $("."+currentPage).animate({scrollTop: currentScroll+scrollUnit},'slow');
+	     	 $("."+currentPage).animate({scrollTop: currentScroll-scrollUnit},'slow');
 			break;
 		case 39: //right	
 		case 40: //down
-     	     $("."+currentPage).animate({scrollTop: currentScroll-scrollUnit},'slow');
+     	     $("."+currentPage).animate({scrollTop: currentScroll+scrollUnit},'slow');
 			 break;
 		default:
 			break;
