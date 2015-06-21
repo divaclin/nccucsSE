@@ -114,13 +114,7 @@ $(document).on('mouseout','#secondUl',function(e){
 	$('#secondLi').hide();
 });
 $(document).on('click','.dotCircle',function(e){
-    var target = $("a[data-num="+$(this).attr('data-num')+"]");
-	$('.QA').animate({scrollTop: target.offset().top-243},'slow');	
-	//console.log(target);
-	//console.log(target.offset().top);
-	console.log($(this).attr('data-num'));
-	console.log('yo');
-	for(var i=0;i<10;i++){
-		console.log( $("a[data-num="+i+"]").offset().top-243);
-	}
+    // var target = $("a[data-num="+$(this).attr('data-num')+"]");
+ // 	$('.QA').animate({scrollTop: target.offset().top},'slow');
+    $('.QA').animate({scrollTop: 535*parseInt($(this).attr('data-num'))},'slow');
 });
