@@ -116,4 +116,6 @@ $(document).on('mouseout','#secondUl',function(e){
 $(document).on('click','.dotCircle',function(e){
     var target = $(".QAbox[data-num="+$(this).attr('data-num')+"]");
 	$('.QA').animate({scrollTop: target.offset().top},'slow');	
+	console.log(target);
+	console.log(target.offset().top);
 });
