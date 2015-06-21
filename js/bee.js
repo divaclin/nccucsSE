@@ -131,8 +131,8 @@ $(document).on('click','.dotCircle',function(e){
 $(function(){
     $('html').keydown(function(e){
 		var currentPage = router.currentPage();
-		var currentScroll = localStorage.getItem(currentPage);
-		var scrollUnit = localStorage.getItem(currentPage+"-unit");
+		var currentScroll = parseInt(localStorage.getItem(currentPage));
+		var scrollUnit = parseInt(localStorage.getItem(currentPage+"-unit"));
 		console.log(currentPage);
 		console.log(currentScroll);
 		console.log(scrollUnit);
