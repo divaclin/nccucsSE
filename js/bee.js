@@ -121,22 +121,27 @@ $(document).on('mouseout','#secondUl',function(e){
 });
 $(document).on('click','.dotCircle',function(e){
 	 var start = $("a[data-num=0]").offset().top;
-     var target = $("a[data-num="+$(this).attr('data-num')+"]");
-  	 $('.QA').animate({scrollTop: target.offset().top-start},'slow');
+     var target = $("a[data-num="+$(this).attr('data-num')+"]").offset().top;
+	 var currentPage = router.currentPage();
+  	 $('.QA').animate({scrollTop: target-start},'slow');
+	 localStorage.setItem(currentPage,target-start);
+	 localStorage.setItem(currentPage+"-unit",535);
 });
 
 $(function(){
     $('html').keydown(function(e){
-		console.log(router.currentPage());
+		var currentPage = router.currentPage();
+		var currentScroll = localStorage.getItem(currentPage);
+		var scrollUnit = localStorage.getItem(currentPage+"unit");
 		switch(e.which){
+		case 37: //left	
 		case 38: //top
+	     	 $('.'+currentPage).animate({scrollTop: currentScroll+scrollUnit},'slow');
 			break;
+		case 39: //right	
 		case 40: //down
-			break;
-		case 37: //left
-			break;
-		case 39: //right
-			break;
+     	     $('.'+currentPage).animate({scrollTop: currentScroll-scrollUnit},'slow');
+			 break;
 		default:
 			break;
 		}
