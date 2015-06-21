@@ -119,9 +119,8 @@ $(document).on('click','.dotCircle',function(e){
 	//console.log(target);
 	//console.log(target.offset().top);
 	console.log($(this).attr('data-num'));
-	console.log($('.QA').offset());
 	console.log('yo');
 	for(var i=0;i<10;i++){
-		console.log( $("a[data-num="+i+"]").offset());
+		console.log( $("a[data-num="+i+"]").offset().top-243);
 	}
 });
