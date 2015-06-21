@@ -60,14 +60,18 @@
 	display:none;
 }
 .QAbox{
-	border:#FFB950 3px solid;
+	border:#FFB950 5px solid;
 	height:400px;
 	background:#FFFFC3;
+	border-radius:10px;
+	margin:100px auto;
 }
 .QAbox h3{
 	background:#FFB950;
 	margin-top:0;
+	padding:10px;
 }
 .QAbox p{
 	color:#772B1A;
+	padding:15px;	
 }
