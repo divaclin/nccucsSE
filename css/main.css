@@ -62,8 +62,12 @@
 .QAbox{
 	border:#FFB950 3px solid;
 	height:400px;
+	background:#FFFFC3;
 }
 .QAbox h3{
 	background:#FFB950;
 	margin-top:0;
+}
+.QAbox p{
+	color:#772B1A;
 }
