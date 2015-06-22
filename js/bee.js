@@ -76,7 +76,24 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					return '<div class="beeContainer"><div class="QA"></div></div>';
 				   },
 				legalInfo:function(){
-				             return '<div class="beeContainer"></div>';
+					var LawBee = Parse.Object.extend("LawBee");
+					var all = new Parse.Query(LawBee);
+					all.find({
+					    success:function(data){
+   						  var text = '<div class="dotSelector">';	
+  						  for(var i=0;i<data.length;i++){
+  							  $(".QA").append('<a data-num="'+i+'"></a><div class="QAbox"><h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><p>'+data[i].get('Answer')+'</p></div>');
+  							  text+='<div class="dotCircle" data-num="'+i+'"></div>';
+  						   }
+  						   text+='</div>';
+  					       $(".QA").append(text);
+					    },
+						error:function(error){
+                            console.log(error) ;
+                            alert(error.message);
+						}	
+					});
+				    return '<div class="beeContainer"><div class="QA"></div></div>';
 				          },
 				beeInfo:function(){
 	                         return '<div class="beeContainer"></div>';
