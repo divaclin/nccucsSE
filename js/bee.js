@@ -150,10 +150,7 @@ $(function(){
 		var currentPage = router.currentPage();
 		var currentScroll = parseInt(localStorage.getItem(currentPage));
 		var scrollUnit = parseInt(localStorage.getItem(currentPage+"-unit"));
-		console.log(currentPage);
-		console.log(currentScroll);
-		console.log(scrollUnit);
-
+		
 		switch(e.which){
 		case 37: //left	
 		case 38: //top
