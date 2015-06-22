@@ -76,7 +76,11 @@
 }
 .QAbox pre{
 	color:#772B1A;
-	padding:15px;	
+	padding:15px;
+	height:300px;
+	font-size:16px;
+	background:#FFFFC3;
+	overflow-y:scroll;	
 }
 .dotSelector{
 	width:15px;
