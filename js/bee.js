@@ -62,7 +62,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 						success:function(data){
  						  var text = '<div class="dotSelector">';	
 						  for(var i=0;i<data.length;i++){
-							  $(".QA").append('<a data-num="'+i+'"></a><div class="QAbox"><h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><p>'+data[i].get('Answer')+'</p></div>');
+							  $(".QA").append('<a data-num="'+i+'"></a><div class="QAbox"><h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><pre>'+data[i].get('Answer')+'</pre></div>');
 							  text+='<div class="dotCircle" data-num="'+i+'"></div>';
 						   }
 						   text+='</div>';
@@ -82,7 +82,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					    success:function(data){
    						  var text = '<div class="dotSelector">';	
   						  for(var i=0;i<data.length;i++){
-  							  $(".QA").append('<a data-num="'+i+'"></a><div class="QAbox"><h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><p>'+data[i].get('Answer')+'</p></div>');
+  							  $(".QA").append('<a data-num="'+i+'"></a><div class="QAbox"><h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><pre>'+data[i].get('Answer')+'</pre></div>');
   							  text+='<div class="dotCircle" data-num="'+i+'"></div>';
   						   }
   						   text+='</div>';
