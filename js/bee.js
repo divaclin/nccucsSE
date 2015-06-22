@@ -93,7 +93,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
                             alert(error.message);
 						}	
 					});
-				    return '<div class="beeContainer"><div class="QA"></div></div>';
+				    return '<div class="beeContainer"><div class="QA legalInfo"></div></div>';
 				          },
 				beeInfo:function(){
 	                         return '<div class="beeContainer"></div>';
