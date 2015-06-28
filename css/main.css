@@ -7,7 +7,8 @@
     display: none; 
 }
 svg{
-	margin:0 auto;
+	margin-top:10px;
+	margin-left:115px;
 }
 .city{
 	background:url('../img/cityBackground.png');
