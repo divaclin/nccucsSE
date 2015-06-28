@@ -99,7 +99,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 	                         return '<div class="beeContainer"></div>';
 						}
 			};
-			text = (switchView[tag]==undefined?'<iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe>':switchView[tag]);
+			text = (switchView[tag]==undefined?'<div class="beeContainer" style="background:black;"><iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="650" height="490"></iframe></div>':switchView[tag]);
 			$router.fadeOut('slow',function(){			        
 					$router.fadeIn('slow').html(text);	
 			});
