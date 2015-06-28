@@ -126,7 +126,7 @@ $(window).on('hashchange', function() {
 	router.page();
 });
 $(window).resize(function(){
-	$('.dotSelector').css("left",96+(1440-$(window).width())/2);
+	$('.dotSelector').css("left",96-(1440-$(window).width())/2);
 });
 $(document).on('mouseover','#secondUl',function(e){
 	var secondLi = $('#secondLi');
