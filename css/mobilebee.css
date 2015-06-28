@@ -6,10 +6,11 @@ header{
 	margin:0 auto;
 }
 header > ul{
-	width:640px;
-    height:50px;
-	margin:15px auto 0 auto;
-	background-color:#BA7D43;	 
+	width:625px;
+    height:90px;
+    margin-top: 20px;
+	display:inline-block;
+	margin-left: 20px
 }
 header > ul li{
 	display:inline-block;
@@ -40,7 +41,6 @@ article{
    margin:0 auto;
    width:640px;
    height:100vh;
-   background:#73C69A;	
 }
 iframe,canvas{
 	overflow:hidden;
@@ -51,6 +51,7 @@ iframe,canvas{
 	background-size:65% 70px;
 	width:65%;
 	height:70px; 
+    margin-left: 10px;
 }
 
 

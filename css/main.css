@@ -6,20 +6,35 @@
 ::-webkit-scrollbar { 
     display: none; 
 }
+.city{
+	background:url('../img/cityBackground.png');
+	width:960px;
+    background-size: 298px 200px;
+	background-repeat:no-repeat;
+    background-position-x: 645px;
+}
 .listWord{
 	font-family: Meiryo, "微軟正黑體", "Microsoft JhengHei";
 	color: black; 
 	text-shadow: white 0px 2px, white 2px 0px, white -2px 0px, 
 	    white 0px -2px, white -1.4px -1.4px, white 1.4px 1.4px, 
 	    white 1.4px -1.4px, white -1.4px 1.4px; 
-    text-align:center;
+	background: url('../img/grass.png');
+    background-position: center 10px;
+    background-size: 195px;
+    background-repeat: repeat-x;
 }
 .listWord li{
-	width:24%;
-	height:35px;
-    border-right: 3px solid #000;
+	width:30%;
+	height:75px;
 	display:inline-block;
-	margin-top:10px;
+    padding-top: 15px;
+    background: url('../img/liBackground.png');
+    background-size: 66%;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+	text-align:center;
+    margin-left: -40px;
 }
 .listWord a{
 	font-size:25px;
@@ -42,7 +57,6 @@
 	display:none;
 	height:100px;
 	width:100%;
-	background:rgb(186,125,67);
 	position:absolute;
 	top:155px;
 	z-index:2;

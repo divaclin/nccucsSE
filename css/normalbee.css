@@ -6,16 +6,17 @@ header{
 	margin:0 auto;
 }
 header > ul{
-	width:860px;
-    height:50px;
-	margin:25px auto;
-	background-color:#BA7D43;	
+	width:625px;
+    height:90px;
+    margin-top: 20px;
+	display:inline-block;
+	margin-left: 20px
+	
 }
 article{
    margin:0 auto;
    width:960px;
    height:100vh;
-   background:#73C69A;	
 }
 iframe,canvas{
 	overflow:hidden;
@@ -26,6 +27,7 @@ iframe,canvas{
 	background-size:370px 90px;
 	width:370px;
 	height:90px; 
+    margin-left: 10px;
 }
 .beeContainer{
 	background:#fff;
