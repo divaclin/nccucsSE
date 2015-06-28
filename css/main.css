@@ -6,6 +6,7 @@
 ::-webkit-scrollbar { 
     display: none; 
 }
+
 .city{
 	background:url('../img/cityBackground.png');
 	width:960px;
@@ -68,6 +69,9 @@
     font-size: 20px;
     padding-top: 5%;
 }
+.link{
+	width:85%;
+}
 .QA,.link{
 	overflow-y:scroll;
 	overflow-x:hidden;
@@ -110,4 +114,52 @@
 	background:#772B1A;
 	display:inline-block;
 	border-radius:50%;
+}
+.gon {
+  width: 220px;
+  height: 220px;
+  background: #FFBF00;  
+  /* Text styling */
+  line-height: 220px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 6px;
+  color: #000;
+  color: rgba(255,255,255,.5);
+  opacity:0.8;
+  display:inline-block;
+
+}
+.gon:hover {
+  color: #000;
+  opacity:1;
+}
+.hexa {
+  width: 190px;
+  -webkit-clip-path: polygon(
+    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+  );
+  -moz-clip-path: polygon(
+    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+  );
+  -ms-clip-path: polygon(
+    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+  );
+  clip-path: polygon(
+    50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%
+  );
+}
+.hexa h4{
+    line-height: inherit;
+	width:190px;
+	height:220px;
+}
+.hexa a{
+    transition:ease color 3s;
+	text-decoration:none;
+}
+.hexa a:hover{
+	text-decoration:none;
+	color:#000;
 }

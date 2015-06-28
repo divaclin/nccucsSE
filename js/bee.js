@@ -20,40 +20,20 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 				     },
 				link:function(){
 					  var RelatedLink = Parse.Object.extend("RelatedLink");
-					  var all;
-					  for(var j=1;j<=3;j++){
-					      all = new Parse.Query(RelatedLink); 
-					      all.equalTo("role",j);
-					      all.find({
+					  var all = new Parse.Query(RelatedLink);
+					  all.find({
 						      success:function(data){
 								  for(var i=0;i<data.length;i++){
-								   switch(data[i].get('role')){
-								      case 1:
-										 $('.link').append('<h3>推廣網站</h3>');
-										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
-										 $('.link').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');
-										 break;
-								      case 2:
-										 $('.link').append('<h3>知名業者</h3>');
-										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
-										 $('.link').append('<img style="width:170px; height:60px;" src="'+data[i].get('img').url()+'" />');	 
-										 break;
-								      case 3:
-										 $('.link').append('<h3>新聞報導</h3>');
-										 $('.link').append('<a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a>');
-										 break;
-								      default:
-										 break; 	
-								   }
-							     }
+									  $('.link').append('<div class="hexa gon"><a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a></div>');									  	
+								   }  
 						      },
 						      error:function(error){
                                  console.log(error) ;
                                  alert(error.message);
 						      }
-					     });
-				      }
-					  return '<div class="beeContainer"><div class="link"></div></div>';
+						  });
+				      
+					  return '<div class="beeContainer" style="background:black; opacity:0.8;"><div class="link"></div></div>';
 				     } ,
 				QA:function(){
 				    var CommonQuestion = Parse.Object.extend("CommonQuestion");
@@ -99,7 +79,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 	                         return '<div class="beeContainer"></div>';
 						}
 			};
-			text = (switchView[tag]==undefined?'<div class="beeContainer" style="background:black;"><iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="640" height="480"></iframe></div>':switchView[tag]);
+			text = (switchView[tag]==undefined?'<div class="beeContainer" style="background:black; opacity:0.8;"><iframe style="margin-top:0px; margin-left:155px;" src="FlappyBee/play.html"  width="640" height="480"></iframe></div>':switchView[tag]);
 			$router.fadeOut('slow',function(){			        
 					$router.fadeIn('slow').html(text);	
 			});
