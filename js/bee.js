@@ -24,7 +24,7 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
 					  all.find({
 						      success:function(data){
 								  for(var i=0;i<data.length;i++){
-									  $('.link').append('<div class="hexa gon"><a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a></div>');									  	
+									  $('.link').append('<div class="hexa gon"'+((i-4)%7==0?'style="margin-left:95px;"':'')+'><a href="'+data[i].get('url')+'"><h4>'+data[i].get('name')+'</h4></a></div>');									  	
 								   }  
 						      },
 						      error:function(error){
