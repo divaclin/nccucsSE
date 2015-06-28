@@ -167,3 +167,30 @@ svg{
 	text-decoration:none;
 	color:#000;
 }
+.movingBee{
+    background: url('../img/bee.png');
+	width:70px;
+	height:61px;
+	position:absolute;
+	transition:ease left .5s,
+	           ease top .5s;
+	left:1000px;
+	top:145px;
+}
+.sun,.moon{
+	width:58px;
+	height:55px;
+	position:absolute;
+	transition:ease left .5s,
+	           ease top .5s;
+    top:150px;
+	left:1090px;
+}
+.sun{
+	background:url('../img/sun.png');
+	background-size:58px 55px;
+}
+.moon{
+	background:url('../img/moon.png');
+	background-size:58px 55px;
+}
