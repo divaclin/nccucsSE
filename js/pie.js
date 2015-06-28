@@ -1,7 +1,7 @@
 
 function drawPie(csv,whichOne){
-var width = 360,
-    height = 200,
+var width = 400,
+    height = 240,
     radius = Math.min(width, height) / 2
     status = 1;
     
@@ -46,7 +46,7 @@ var myMouseoverFunction = function() {
          .style("opacity",1);
   var text = d3.selectAll("text");
       text.transition().duration(200)
-          .style("font-size","15px");
+          .style("font-size","10px");
 
 
 }
