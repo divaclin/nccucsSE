@@ -43,7 +43,8 @@ Parse.initialize("gkxrXspbCFvMPK3Gn1Vs9Vt9w4FAnLkG9a0v56MA", "yg3rSXgnmwSbYXVfKq
  						  var text = '<div class="dotSelector">';	
 						  for(var i=0;i<data.length;i++){
 							  $(".QA").append('<a data-num="'+i+'"></a><div class="QAbox"><h3>Q'+(i+1)+'. '+data[i].get('Question')+'</h3><pre id="pre'+i+'" style="max-height:180px; overflow:scroll;">'+data[i].get('Answer')+'</pre></div>');
-							  drawPie(data[i].get('csv').url,i);
+							  console.log(data[i].get('csv').url());
+							  drawPie(data[i].get('csv').url(),i);
 							  text+='<div class="dotCircle" data-num="'+i+'"></div>';
 						   }
 						   text+='</div>';
