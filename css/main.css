@@ -6,7 +6,9 @@
 ::-webkit-scrollbar { 
     display: none; 
 }
-
+svg{
+	margin:0 auto;
+}
 .city{
 	background:url('../img/cityBackground.png');
 	width:960px;
