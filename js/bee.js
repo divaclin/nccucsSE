@@ -186,15 +186,14 @@ function animate(angle){
     if(angle==180){
 		angle = 0;
         bee.hide().css({"left":localStorage.getItem('beeX'),"top":145});
-		sunORmoon.hide();
         if(sunORmoon.hasClass('moon')){
-        	sunORmoon.remove('moon');
+        	sunORmoon.removeClass('moon');
         	sunORmoon.addClass('sun');
         }else{
-        	sunORmoon.remove('sun');
+        	sunORmoon.removeClass('sun');
         	sunORmoon.addClass('moon');
         }
-		$(".moon").css({"left":"","top":""});	
+		sunORmoon.hide();
     }else{
 		bee.show();
 		sunORmoon.show();
