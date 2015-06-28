@@ -1,7 +1,7 @@
 
 function drawPie(csv,whichOne){
-var width = 400,
-    height = 240,
+var width = 450,
+    height = 300,
     radius = Math.min(width, height) / 2
     status = 1;
     
